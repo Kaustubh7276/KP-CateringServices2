@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.LoginRegister,login);
-//Achi kuchi ghau Achi kuchi ghau caha saglani kaustya la jau
+
         fragmentTransaction.commit();
     }
 
