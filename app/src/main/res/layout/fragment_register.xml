@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgcate"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="86dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/asdf" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Register here !"
+            android:textColor="@color/white"
+            android:textSize="33dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/UserName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:hint="username"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#C1BEBE"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EmailID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="abc@gmail.com"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#C1BEBE"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Password"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#C1BEBE"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/passconfirm"
+            android:layout_width="356dp"
+            android:layout_height="64dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Confirm "
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#C1BEBE"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/REGISTER"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15sp"
+            android:text="REGISTER" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="33dp">
+
+            <TextView
+                android:id="@+id/backtologin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="60dp"
+                android:text="Click here to go Login page"
+                android:gravity="left"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/LOGIN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="LOGIN" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
