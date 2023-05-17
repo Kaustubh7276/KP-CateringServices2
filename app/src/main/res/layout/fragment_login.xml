@@ -2,11 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".LoginFragment">
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,16 +27,17 @@
                 android:src="@drawable/asdf" />
 
             <EditText
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_margin="20dp"
                 android:hint="UserName"
                 android:textAllCaps="true"
-                android:textStyle="bold"
-                android:textColorHint="#FFFFFF"/>
+                android:textColorHint="#FFFFFF"
+                android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextPassword2"
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_margin="20dp"
@@ -53,27 +52,24 @@
 
             <ProgressBar
                 android:layout_width="50dp"
+                android:id="@+id/progressBar"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:foregroundGravity="center"
                 android:visibility="gone" />
 
             <Button
+                android:id="@+id/signin"
                 android:layout_width="180dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:text="Sign up"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:backgroundTint="#9E2222" />
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:orientation="vertical">
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -90,6 +86,7 @@
 
             <Button
                 android:layout_width="match_parent"
+                android:id="@+id/google"
                 android:layout_height="60dp"
                 android:layout_margin="20dp"
                 android:backgroundTint="#821414"
@@ -111,7 +108,7 @@
                 android:id="@+id/changeFragment"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="5dp"
                 android:text="Click here to Create an Account.."
                 android:textColor="@color/white"
@@ -124,5 +121,4 @@
 
 
     </LinearLayout>
-</ScrollView>
 </RelativeLayout>

@@ -7,6 +7,16 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+    UserInfo user;
+    AlertHandling alert;
+
+    @Override
+    public void onBackPressed() {
+        alert=new AlertHandling(MainActivity.this);
+        alert.exitAppAlertDialog();
+//        super.onBackPressed();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
