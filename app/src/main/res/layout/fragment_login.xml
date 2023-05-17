@@ -31,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_margin="20dp"
-                android:hint="UserName"
+                android:hint="UserEmail"
                 android:textAllCaps="true"
                 android:textColorHint="#FFFFFF"
                 android:textStyle="bold" />

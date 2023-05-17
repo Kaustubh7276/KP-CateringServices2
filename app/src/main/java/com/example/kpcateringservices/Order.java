@@ -70,7 +70,7 @@ public class Order extends AppCompatActivity {
                    Toast.makeText(getApplicationContext(),"Enter Delivery Address.",Toast.LENGTH_LONG).show();
                    return;
                }
-               String customerMessage="Customer Your Order has been placed Succesfully.\n If you have any Query Contact US : 7276377562"+"";
+               String customerMessage="Dear customer, Your Order has been placed Succesfully.\n If you have any Query Contact US : 7276377562"+"";
 
                String ownerMessage="Customer name : "+name.getText().toString()+"\nMobile Number : "+phone.getText().toString()+
                        "\nEmail Address : "+email.getText().toString()+"\nDelivery Date : "+date.getText().toString()+
